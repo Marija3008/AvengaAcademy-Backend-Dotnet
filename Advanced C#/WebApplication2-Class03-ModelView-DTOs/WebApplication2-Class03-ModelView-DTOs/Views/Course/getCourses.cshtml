@@ -1,0 +1,19 @@
+﻿@using WebApplication2_Class03_ModelView_DTOs.Models.ViewModels
+
+
+@*
+    For each controller there must be a folder with the same name in the View folder, and inside that folder that matches the name of the controller there must be created Views with the same names as the actions inside the controller
+*@
+
+@model List<CourseViewModel>
+
+@foreach(var course in @Model)
+{
+    <div class="container">
+        <h2>Course name: @course.Name</h2>
+        <p>Number of classes: @course.NumberOfClasses</p>
+    </div>
+    <hr />
+    
+}
+
